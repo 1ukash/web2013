@@ -12,5 +12,21 @@ we were redirected to jsp!
 ${counter } : ${thread } 
 </b>
 
+<p>
+	obj:
+	<br>
+	${obj.threadName }
+	<br>
+	${obj.parameter }
+</p>
+
+<p>
+session started at ${sessionScope.date }
+</p>
+
+<p>
+request time ${requestScope.date }
+</p>
+
 </body>
 </html>

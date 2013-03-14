@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://spbstu.ru/schema/config" xmlns:a="http://spbstu.ru/schema/test">
+	<font name="Arial">
+		<size>12</size>
+	</font>
+	<num>xA7;</num>
+	<num>155</num>
+	<val>&gt;&lt;&amp;</val>
+	<rawData>
+	<![CDATA[
+	dsfadsaf
+	<br> <XXX> dd
+	]]>
+	</rawData>
+	<emptyTag/>
+	<!-- 
+	it is a comment
+	 -->
+	 
+	 <a:rawData>
+	 	<a:test>dfdsjfk</a:test>
+	 </a:rawData>
+</config>

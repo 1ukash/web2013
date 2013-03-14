@@ -9,8 +9,18 @@
   	<servlet-class>ru.spbstu.telematics.web.FooServlet</servlet-class>
   </servlet>
   
+  <servlet>
+  	<servlet-name>messageparser</servlet-name>
+  	<servlet-class>ru.spbstu.telematics.web.MessageServlet</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
   	<servlet-name>foo</servlet-name>
   	<url-pattern>/foo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>messageparser</servlet-name>
+  	<url-pattern>/msg</url-pattern>
   </servlet-mapping>
 </web-app>

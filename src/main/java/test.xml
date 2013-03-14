@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<message>
+		<user>Ivan</user>
+		<text color="red">hello world</text>
+	</message>
+	<message>
+		<user>Petr</user>
+		<text color="black">what's up?</text>
+	</message>
+	<message>
+		<user>Ivan</user>
+		<text color="purple">nothing serious</text>
+	</message>
+</messages>
