@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <messages>
+<!-- <messages>-->
 	<message>
 		<user>Ivan</user>
 		<text color="red">hello world</text>

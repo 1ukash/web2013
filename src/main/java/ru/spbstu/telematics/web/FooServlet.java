@@ -20,6 +20,7 @@ public class FooServlet extends HttpServlet {
 	private final AtomicInteger counter = new AtomicInteger();
 	private final ApplicationManager manager = new ApplicationManager();
 
+	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.addHeader("Content-Type", "text/html");
 		

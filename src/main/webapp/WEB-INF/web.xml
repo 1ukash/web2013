@@ -4,6 +4,11 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <display-name>WebApp for students</display-name>
   
+  <listener>
+        <listener-class>
+                com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+        </listener-class>
+  </listener>
   <servlet>
   	<servlet-name>foo</servlet-name>
   	<servlet-class>ru.spbstu.telematics.web.FooServlet</servlet-class>
@@ -12,6 +17,11 @@
   <servlet>
   	<servlet-name>messageparser</servlet-name>
   	<servlet-class>ru.spbstu.telematics.web.MessageServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>listmessages</servlet-name>
+  	<servlet-class>ru.spbstu.telematics.web.ListMessages</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -23,4 +33,20 @@
   	<servlet-name>messageparser</servlet-name>
   	<url-pattern>/msg</url-pattern>
   </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>listmessages</servlet-name>
+  	<url-pattern>/listmsgs</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>soap</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>soap</servlet-name>
+        <url-pattern>/soap/*</url-pattern>
+    </servlet-mapping>
+  
 </web-app>
