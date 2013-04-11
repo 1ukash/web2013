@@ -17,7 +17,7 @@ import ru.spbstu.telematics.logic.ApplicationManager;
 @SuppressWarnings("serial")
 public class ListMessages extends HttpServlet {
 
-	private ApplicationManager manager = new ApplicationManager();
+	private ApplicationManager manager = ApplicationManager.getInstance();
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {

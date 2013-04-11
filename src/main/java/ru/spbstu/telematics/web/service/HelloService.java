@@ -4,6 +4,8 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
+import ru.spbstu.telematics.dto.Message;
+
 @WebService
 public class HelloService {
 	private String msg = "Hello,";
@@ -12,8 +14,11 @@ public class HelloService {
 	}
 
 	@WebMethod
-	public String sayHello(@WebParam(name="name") String name) {
-		return msg + name;
+	public Message sayHello(@WebParam(name="name") Message name) {
+		
+		Message m = new Message(1, "service", msg + name.getUser() + "! You id is " + name.getNumber());
+		
+		return m;
 	}
 
 }

@@ -18,7 +18,7 @@ import ru.spbstu.telematics.logic.ApplicationManager;
 
 public class FooServlet extends HttpServlet {
 	private final AtomicInteger counter = new AtomicInteger();
-	private final ApplicationManager manager = new ApplicationManager();
+	private final ApplicationManager manager = ApplicationManager.getInstance();
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

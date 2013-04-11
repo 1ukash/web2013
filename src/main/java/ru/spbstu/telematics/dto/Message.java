@@ -1,11 +1,17 @@
 package ru.spbstu.telematics.dto;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+import org.codehaus.jackson.annotate.JsonAutoDetect;
+import org.codehaus.jackson.map.annotate.JsonRootName;
 
 import ru.spbstu.telematics.annotations.Description;
 import ru.spbstu.telematics.annotations.EnumExample;
 
 @Description(ex=EnumExample.A, text = "it is a text", title = "A", version=2)
+@XmlRootElement
 public class Message {
 	private int number;
 	private String user;

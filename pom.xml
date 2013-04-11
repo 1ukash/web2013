@@ -59,6 +59,25 @@
     	<version>2.2.8-promoted-b146</version>
 	</dependency>
     <!-- // JAX WS -->
+    
+    <!-- JAX RS -->
+
+	<dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-servlet</artifactId>
+    	<version>1.17.1</version>
+	</dependency>
+	<dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-json</artifactId>
+    	<version>1.17.1</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.codehaus.jackson</groupId>
+	    <artifactId>jackson-jaxrs</artifactId>
+	    <version>1.9.12</version>
+	</dependency>
+    <!-- // JAX RS -->
   </dependencies>
   <build>
     <finalName>foowebapp</finalName>

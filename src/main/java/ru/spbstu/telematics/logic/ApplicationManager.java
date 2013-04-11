@@ -27,6 +27,14 @@ public class ApplicationManager {
 		}
 	}
 
+	private static ApplicationManager instance = new ApplicationManager();
+	
+	private ApplicationManager() {}
+	
+	public static ApplicationManager getInstance() {
+		return instance;
+	}
+	
 	public BusinessObject getBusinessObject(String parameter) {
 		return new BusinessObject(parameter, Thread.currentThread().getName());
 	}
